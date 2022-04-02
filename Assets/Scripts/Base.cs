@@ -14,10 +14,4 @@ public class Base : Building
     {
         Instance = this;
     }
-
-    [Serializable]  // this lets the JSON util know to save this shit
-    class SaveData
-    {
-        public Color TeamColor;
-    }
 }
