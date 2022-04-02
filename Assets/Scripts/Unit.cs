@@ -26,7 +26,10 @@ public abstract class Unit : MonoBehaviour,
 
     private void Start()
     {
-
+        if (MainManager.Instance != null)             // MainManager is created in the scene Menu.
+        {                                             // If we started the app while in the Main scene then,
+            SetColor(MainManager.Instance.TeamColor); // we'd get an error becasue MainManager wouldn't exist. 
+        }
     }
 
     void SetColor(Color c)
