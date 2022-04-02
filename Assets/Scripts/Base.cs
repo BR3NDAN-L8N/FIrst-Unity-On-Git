@@ -4,8 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// A special building that hold a static reference so it can be found by other script easily (e.g. for Unit to go back
-/// to it)
+/// The droppoint where forklifts drop off resources 
 /// </summary>
 public class Base : Building
 { 
@@ -14,5 +13,11 @@ public class Base : Building
     private void Awake()
     {
         Instance = this;
+    }
+
+    [Serializable]  // this lets the JSON util know to save this shit
+    class SaveData
+    {
+        public Color TeamColor;
     }
 }
