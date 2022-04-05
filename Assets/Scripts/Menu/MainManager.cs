@@ -28,7 +28,7 @@ public class MainManager : MonoBehaviour
         // that was passed in as a param. 
         DontDestroyOnLoad(gameObject);
 
-        // data needs to be loaded from here and not the load-button on the menu?
+        // data loaded here, can also be loaded by pressing the Load-button in the menu
         LoadColor();
     }
 
