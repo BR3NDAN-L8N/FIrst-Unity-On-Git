@@ -7,7 +7,7 @@ using UnityEngine;
 public class MainManager : MonoBehaviour
 {
 
-    public static MainManager Instance; // Instance is the Singleton
+    public static MainManager Instance { get; private set; } // Instance is the Singleton
     public Color TeamColor;
 
     private void Awake()
